@@ -43,15 +43,23 @@ hr {
   color: var(--beige);
 }
 
-.nav-link:visited {
+#linkedin {
+  color: var(--beige);
+}
+
+.nav-link:visited,
+#linkedin:visited {
   color: var(--gold);
 }
 
-.nav-link:hover {
-  color: black;
+.nav-link:hover,
+#linkedin:hover
+ {
+  color: var(--dark-beige);
   font-size: 1.2em;
   cursor: grabbing;
 }
+
 
 header {
   display: flex;
@@ -73,8 +81,8 @@ header {
 }
 
 #header-text {
-  padding-top: 5.5em;
-  margin-left: 140px;
+  padding-top: 7.5em;
+  margin-left: 160px;
   color: var(--beige);
 }
 
@@ -82,12 +90,13 @@ h1 {
   font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
   font-weight: 900; 
   font-size: 3em;
+  color: var(--gold);
 }
 
 h2, #summary {
   font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
   font-size: 1em; 
-  color: (--gold);
+  color: (--beige);
 }
 
 h3 {
@@ -112,7 +121,8 @@ p, li {
 
 #work-header,
 #education-header,
-#reference-name {
+#reference-name,
+#cert {
   font-size: 1.2em;
   color: black;
 }
@@ -131,18 +141,7 @@ p, li {
   color: var(--gold);
 }
 
-#linkedin {
-  color: var(--beige);
-}
 
-#linkedin:hover {
-  color: var(--gold);
-  font-size: 1.4em;
-}
-
-#linkedin:visited {
-  color: var(--dark-beige);
-}
 
 
 
