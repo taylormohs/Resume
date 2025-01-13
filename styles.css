@@ -1,10 +1,62 @@
-** {
-  background-color: beige;
+:root {
+  --example-color: #000000;
+  --background-
 }
 
-header {
-  background-color: white;
-  color: brown;
+// call with color: var(--example-color);
+
+
+** {
+  background-color: beige;
+  scroll-behavior: smooth;
+  font-family: courier new;
+  cursor: pointer;
+}
+
+header, h1, nav  {
+  background-color: #A62929;
+  font-family: sans-seriff;
+  text-align: center;
+  font-weight: 900; 
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+h1 {
+  font-size: 30px;
+  padding-bottom: 1rem;
+  padding-top: 1.6rem;
+  text-shadow: 2px 2px 5px #F1B66E;
+}
+
+nav {
+  background-color: #A62929;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600; 
+  position: fixed;
+  z-index: 1;
+  padding: 0.8rem;
+  letter-spacing: 0.2em;
+  width: 100%;
+  left: 0;
+}
+
+a { 
+  background-color: #A62929;
+  text-align: justify;
+  color: #FBDADA
+}
+
+a:visited {
+  color: #F1B66E;
+}
+
+a:hover {
+  color: black;
+  font-size: 16px;
+  cursor: grabbing;
 }
 
 hr {
