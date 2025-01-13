@@ -14,14 +14,13 @@
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  place-items: center;
-  text-align: justify;
+  display: flex;
   padding: 10px;
   background-color: var(--blue);
   color: var(--beige);
   width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
 #profile-picture {
@@ -32,8 +31,6 @@ header {
 }
 
 #header-text {
-  display: grid;
-  grid-auto-flow: column;
   color: var(--beige);
 }
 
@@ -51,14 +48,15 @@ h2, #summary {
 #nav-bar {
   background-color: var(--blue);
   text-align: center;
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   font-size: 0.75em;
   padding: 0.8rem;
   width: 100%;
   left: 0;
-  top: 0;
   place-content: 0.1rem;
+  position: fixed;
+  z-index: 1;
 }
 
 .nav-link { 
@@ -72,9 +70,16 @@ h2, #summary {
 }
 
 .nav-link:hover {
-  color: var(--gold);
-  font-size: 2.5em;
+  color: black;
+  font-size: 2rem;
   cursor: grabbing;
+}
+
+a:hover {
+  cursor: grabbing;
+  color: black;
+  font-size: 2rem;
+
 }
 
 hr {
