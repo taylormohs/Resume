@@ -28,12 +28,14 @@
 h4 {
   font-size: 1em;
   padding-bottom: 0.3em;
+  color: var(--beige);
 }
 
 hr {
   color: var(--pink);
-  border: 1px solid var(--pink);
-  padding: 0.3em;
+  border: 1px solid var(--beige);
+  padding: 0.1em;
+  background-color:  var(--beige)
 }
 .nav-link { 
   background-color: var(--blue);
@@ -85,6 +87,7 @@ h1 {
 h2, #summary {
   font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
   font-size: 1em; 
+  color: (--gold);
 }
 
 h3 {
@@ -102,14 +105,17 @@ p, li {
   color: black;
 }
 
+#cert {
+   color: black;
+}
 
-a:hover {
+#cert:hover {
   cursor: grabbing;
   color: var(--gold);
   font-size: 1.2rem;
 }
 
-a:visited {
+#cert:visited {
   color: var(--gold);
 }
 
