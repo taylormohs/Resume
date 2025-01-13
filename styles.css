@@ -48,9 +48,9 @@ h2, #summary {
 #nav-bar {
   background-color: var(--blue);
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 0.75em;
+  display: grid;
+  column-count: auto;
+  font-size: 1.5em;
   padding: 0.8rem;
   width: 100%;
   left: 0;
@@ -62,16 +62,16 @@ h2, #summary {
 .nav-link { 
   background-color: var(--blue);
   text-align: justify;
-  color: var(--beige_);
+  color: var(--beige);
 }
 
 .nav-link:visited {
-  color: var(--dark-beige);
+  color: var(--gold);
 }
 
 .nav-link:hover {
   color: black;
-  font-size: 2rem;
+  font-size: 2em;
   cursor: grabbing;
 }
 
