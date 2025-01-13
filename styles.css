@@ -42,17 +42,17 @@ nav {
   left: 0;
 }
 
-a { 
+.nav-link { 
   background-color: var(--blue);
   text-align: justify;
   color: var(--beige_;
 }
 
-a:visited {
+.nav-link:visited {
   color: var(--dark-beige);
 }
 
-a:hover {
+.nav-link:hover {
   color: var(--gold);
   font-size: 2.5em;
   cursor: grabbing;
