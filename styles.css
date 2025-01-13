@@ -101,6 +101,10 @@ h3 {
   background-color: var(--blue);
 }
 
+#hcertifications {
+  padding-top: 1em;
+}
+
 p, li {
   color: black;
 }
