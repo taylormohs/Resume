@@ -14,8 +14,10 @@
 }
 
 header {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  place-items: center;
+  text-align: justify;
   padding: 10px;
   background-color: var(--blue);
   color: var(--beige);
@@ -30,20 +32,23 @@ header {
 }
 
 #header-text {
-  display: flex;
-  flex-direction: column;
-  margin: 5 px 0;
+  display: grid;
+  grid-auto-flow: column;
+  color: var(--beige);
 }
 
 h1 {
-  background-color: var(--blue);
   font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
   font-weight: 900; 
   font-size: 3em;
-  text-shadow: 2px 2px 5px var(--dark-biege);
 }
 
-nav {
+h2, #summary {
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  font-size: 1em; 
+}
+
+#nav-bar {
   background-color: var(--blue);
   text-align: center;
   flex-wrap: wrap;
@@ -81,7 +86,7 @@ h3 {
   color: var(--beige);
 }
 
-p {
+p, li {
   color: var(--gold);
 }
 
