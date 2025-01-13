@@ -1,20 +1,20 @@
 :root {
-  --example-color: #000000;
-  --background-
+  --blue: #429ebf;
+  --pink: #bd8592;
+  --beige: #f6f4ee;
+  --dark-beige: #e4dac1;
+  --gold: #cab98b;
 }
 
-// call with color: var(--example-color);
-
-
 ** {
-  background-color: beige;
+  background-color: var(--beige);
   scroll-behavior: smooth;
   font-family: courier new;
   cursor: pointer;
 }
 
 header, h1, nav  {
-  background-color: #A62929;
+  background-color: var(--blue);
   font-family: sans-seriff;
   text-align: center;
   font-weight: 900; 
@@ -24,18 +24,17 @@ header, h1, nav  {
 }
 
 h1 {
-  font-size: 30px;
-  padding-bottom: 1rem;
-  padding-top: 1.6rem;
-  text-shadow: 2px 2px 5px #F1B66E;
+  font-size: 3em;
+  padding-bottom: 1em;
+  padding-top: 1.6em;
+  text-shadow: 2px 2px 5px var(--biege);
 }
 
 nav {
-  background-color: #A62929;
+  background-color: var(--blue);
   text-align: center;
-  font-size: 12px;
+  font-size: 2em;
   font-weight: 600; 
-  position: fixed;
   z-index: 1;
   padding: 0.8rem;
   letter-spacing: 0.2em;
@@ -44,23 +43,32 @@ nav {
 }
 
 a { 
-  background-color: #A62929;
+  background-color: var(--blue);
   text-align: justify;
-  color: #FBDADA
+  color: var(--beige_;
 }
 
 a:visited {
-  color: #F1B66E;
+  color: var(--dark-beige);
 }
 
 a:hover {
-  color: black;
-  font-size: 16px;
+  color: var(--gold);
+  font-size: 2.5em;
   cursor: grabbing;
 }
 
 hr {
-  color: brown;
+  color: var(--pink);
+}
+
+h3 {
+  background-color: var(--blue);
+  color: var(--beige);
+}
+
+p {
+  color: var(--gold);
 }
 
 
