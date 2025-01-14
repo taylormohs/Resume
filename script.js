@@ -5,7 +5,12 @@ const background = document.querySelector('main');
 const navBar = document.querySelector('nav');
 const navLinks = Array.from(document.getElementsByClassName('nav-link'));
 const cert = document.getElementById('cert');
+const h2 = document.querySelector('h2');
+const h4 = document.querySelector('h4');
+const summary = document.getElementById('summary');
 const dateBtn = document.getElementById('todays-date');
+const dateContainer = document.getElementById('date-container');
+
 let darkMode = false;
 
 lightBtn.addEventListener('click', () => {
@@ -20,6 +25,9 @@ lightBtn.addEventListener('click', () => {
             link.style.color = 'grey';
             link.style.backgroundColor = 'black';
         });
+        h2.style.color = 'grey';
+        h4.style.color = 'grey';
+        summary.style.color = 'grey';
         cert.style.color = 'black';
         cert.style.backgroundColor = 'lightgray';
         headers.forEach((h3) => {
@@ -31,6 +39,7 @@ lightBtn.addEventListener('click', () => {
         dateBtn.style.backgroundColor = 'black';
         dateBtn.style.color = 'grey';
         lightBtn.style.color = 'grey';
+        dateContainer.style.color = 'black';
     } else {
         lightBtn.innerText = 'Dark Mode';
         header.style.backgroundColor = '';
@@ -41,6 +50,9 @@ lightBtn.addEventListener('click', () => {
             link.style.color = '';
             link.style.backgroundColor = '';
         });
+        h2.style.color = '';
+        h4.style.color = '';
+        summary.style.color = '';
         cert.style.color = '';
         cert.style.backgroundColor = '';
         headers.forEach((h3) => {
@@ -52,9 +64,10 @@ lightBtn.addEventListener('click', () => {
         dateBtn.style.backgroundColor = '';
         dateBtn.style.color = '';
         lightBtn.style.color = '';
+        dateContainer.style.color = '';
     }
 });
-const dateContainer = document.getElementById('date-container');
+
 const date = new Date();
 const day = date.getDate();
 const month = date.getMonth() + 1;
