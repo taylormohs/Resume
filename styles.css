@@ -7,7 +7,6 @@
 }
 
 * {
-  background-color: var(--beige);
   scroll-behavior: smooth;
   font-family: courier new;
   cursor: pointer;
@@ -160,7 +159,7 @@ button {
   touch-action: manipulation;
   width: auto;
   will-change: transform,opacity;
-  z-index: -1;
+  z-index: 0;
 }
 
 button:hover {
