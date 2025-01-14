@@ -5,7 +5,10 @@ const background = document.querySelector('main');
 const navBar = document.querySelector('nav-bar');
 const navLinks = Array.from(document.getElementsByClassName('nav-link'));
 const cert = document.getElementById('cert');
+const html = document.querySelector('html');
+const dateBtn = document.getElementById('todays-date');
 let darkMode = false;
+
 
 lightBtn.addEventListener('click', () => {
     darkMode = !darkMode;
@@ -30,31 +33,11 @@ lightBtn.addEventListener('click', () => {
         dateBtn.style.backgroundColor = 'black';
         dateBtn.style.color = 'grey';
         lightBtn.style.color = 'grey';
+        html.style.backgroundColor = 'black';
     } else {
-        lightBtn.innerText = 'Dark Mode';
-        header.style.removeProperty('background-color');
-        header.style.removeProperty('color');
-        navBar.style.removeProperty('background-color');
-        navBar.style.removeProperty('color');
-        navLinks.forEach((link) => {
-            link.style.removeProperty('color');
-            link.style.removeProperty('background-color');
-        });
-        cert.style.removeProperty('color');
-        cert.style.removeProperty('background-color');
-        headers.forEach((h3) => {
-            h3.style.removeProperty('color');
-            h3.style.removeProperty('background-color');
-        });
-        background.style.removeProperty('background-color');
-        lightBtn.style.removeProperty('background-color');
-        dateBtn.style.removeProperty('background-color');
-        dateBtn.style.removeProperty('color');
-        lightBtn.style.removeProperty('color');
+        return;
     }
 });
-
-const dateBtn = document.getElementById('todays-date');
 const dateContainer = document.getElementById('date-container');
 const date = new Date();
 const day = date.getDate();
@@ -63,9 +46,12 @@ const year = date.getFullYear();
 const hours = date.getHours();
 const minutes = date.getMinutes();
 
+const formattedHours = hours % 12 || 12;
+const formattedMinutes = minutes.toString().padStart(2, '0');
+const ampm = hours >= 12 ? 'PM' : 'AM';
 const todaysDate = 
-    `${month}/${day}/${year}
-    ${hours}: ${minutes}`;
+    `${month}/${day}/${year} 
+    ${formattedHours}:${formattedMinutes} ${ampm}`;
 
 let isDateContainerShowing = false;
 

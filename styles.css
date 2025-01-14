@@ -10,7 +10,6 @@
   scroll-behavior: smooth;
   font-family: courier new;
   cursor: pointer;
-  width: 100%;
 }
 
 #nav-bar {
@@ -90,6 +89,7 @@ header {
   padding-top: 7.5em;
   margin-left: 160px;
   color: var(--beige);
+  padding-bottom: 1em;
 }
 
 h1 {
@@ -105,11 +105,6 @@ h2,
   font-size: 1em; 
   color: var(--beige);
 }
-
-#summary {
-  margin-bottom: 1em;
-}
-
 
 h3 {
   color: var(--beige);
@@ -176,7 +171,6 @@ button:hover {
   margin: 0.5em auto;
   padding: 0.5em;
   text-align: center;
-  width: 100%;
   font-size: 1.5em;
   color: var(--gold);
   font-weight: bolder;
@@ -206,11 +200,12 @@ em {
 #cert:hover {
   cursor: grabbing;
   color: var(--gold);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 #cert:visited {
   font-weight: bolder;
+  color: black;
 }
 
 
