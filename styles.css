@@ -2,7 +2,7 @@
   --blue: #429ebf;
   --pink: #bd8592;
   --beige: #f6f4ee;
-  --dark-beige: #e4dac1;
+  --dark-beige: #dcd0b1;
   --gold: #cab98b;
 }
 
@@ -86,7 +86,8 @@ header {
 }
 
 #header-text {
-  padding-top: 7.5em;
+  font-family: tahoma verdana serif;
+  padding-top: 7em;
   margin-left: 160px;
   color: var(--beige);
   padding-bottom: 1em;
@@ -121,6 +122,7 @@ h3 {
 
 
 button {
+  margin: 0.5em auto;
   align-items: center;
   appearance: none;
   background-color: var(--blue);
@@ -153,7 +155,6 @@ button {
   touch-action: manipulation;
   will-change: transform,opacity;
   z-index: 0;
-  width: 100%;
 }
 
 button:hover {

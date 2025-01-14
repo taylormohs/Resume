@@ -4,6 +4,7 @@ const headers = document.querySelectorAll('h3');
 const background = document.querySelector('main');
 const navBar = document.querySelector('nav');
 const navLinks = Array.from(document.getElementsByClassName('nav-link'));
+const linkedIn = document.getElementById('linkedIn');
 const cert = document.getElementById('cert');
 const h2 = document.querySelector('h2');
 const h4 = document.querySelector('h4');
@@ -27,6 +28,7 @@ lightBtn.addEventListener('click', () => {
         });
         h2.style.color = 'grey';
         h4.style.color = 'grey';
+        linkedIn.style.color = 'grey';
         summary.style.color = 'grey';
         cert.style.color = 'black';
         cert.style.backgroundColor = 'lightgray';
@@ -52,6 +54,7 @@ lightBtn.addEventListener('click', () => {
         });
         h2.style.color = '';
         h4.style.color = '';
+        linkedIn.style.color = '';  
         summary.style.color = '';
         cert.style.color = '';
         cert.style.backgroundColor = '';
