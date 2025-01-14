@@ -76,6 +76,6 @@ dateBtn.addEventListener('click', () => {
     dateBtn.innerText = 'Hide Date';
     } else {
         dateContainer.innerText = '';
-        dateBtn.innerText = 'Show Date';
+        dateBtn.innerText = 'Get Date & Time';
     }
 });
