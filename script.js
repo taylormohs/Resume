@@ -8,7 +8,6 @@ const cert = document.getElementById('cert');
 const dateBtn = document.getElementById('todays-date');
 let darkMode = false;
 
-
 lightBtn.addEventListener('click', () => {
     darkMode = !darkMode;
     if (darkMode) {
@@ -33,7 +32,26 @@ lightBtn.addEventListener('click', () => {
         dateBtn.style.color = 'grey';
         lightBtn.style.color = 'grey';
     } else {
-        return;
+        lightBtn.innerText = 'Dark Mode';
+        header.style.backgroundColor = '';
+        header.style.color = '';
+        navBar.style.backgroundColor = '';
+        navBar.style.color = '';
+        navLinks.forEach((link) => {
+            link.style.color = '';
+            link.style.backgroundColor = '';
+        });
+        cert.style.color = '';
+        cert.style.backgroundColor = '';
+        headers.forEach((h3) => {
+            h3.style.backgroundColor = '';
+            h3.style.color = '';
+        });
+        background.style.backgroundColor = '';
+        lightBtn.style.backgroundColor = '';
+        dateBtn.style.backgroundColor = '';
+        dateBtn.style.color = '';
+        lightBtn.style.color = '';
     }
 });
 const dateContainer = document.getElementById('date-container');
