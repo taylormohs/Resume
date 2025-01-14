@@ -9,7 +9,7 @@
 * {
   scroll-behavior: smooth;
   font-family: courier new;
-  cursor: pointer;
+  cursor: default;
 }
 
 nav {
@@ -74,21 +74,21 @@ header {
 }
 
 #profile-picture {
-  width: 100px;
+  width: 10em;
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 3em;
+  margin-left: 3em;
   left: 0;
-  padding-top: 5.5em;
+  padding-top: 7em;
   display: block;
 }
 
-#header-text {
+#introduction {
   font-family: tahoma verdana serif;
   padding-top: 7em;
-  margin-left: 160px;
+  margin-left: 16em;
   color: var(--beige);
   padding-bottom: 1em;
 }
@@ -116,7 +116,7 @@ h3 {
   background-color: var(--blue);
 }
 
-#hcertifications {
+#certifications {
   margin-top: 1.5em;
 }
 
