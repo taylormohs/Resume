@@ -3,7 +3,7 @@ const header = document.querySelector('header');
 const headers = document.querySelectorAll('h3');
 const background = document.querySelector('main');
 const navBar = document.querySelector('nav');
-const navLinks = document.getElementsByClassName('nav-link');
+const navLinks = Array.from(document.getElementsByClassName('nav-link'));
 const cert = document.getElementById('cert');
 let darkMode = false;
 
@@ -19,10 +19,8 @@ lightBtn.addEventListener('click', () => {
             link.style.color = 'lightgray';
             link.style.backgroundColor = 'black';
         }   );
-        cert.forEach((certs) => {
-            certs.style.color = 'black';
-            certs.style.backgroundColor = 'lightgray';
-        });
+        cert.style.color = 'black';
+        cert.style.backgroundColor = 'lightgray';
         headers.forEach((h3) => {
             h3.style.backgroundColor = 'grey';
             h3.style.color = 'black';
@@ -44,10 +42,8 @@ lightBtn.addEventListener('click', () => {
         }   );
         cert.forEach((certs) => {
             certs.style.color = '';
-            certs.style.backgroundColor = '';
-        });
-        headers.forEach((h3) => {
-            h3.style.backgroundColor = '';
+        cert.style.color = '';
+        cert.style.backgroundColor = '';
             h3.style.color = '';
         });
         background.style.backgroundColor = '';
@@ -68,13 +64,18 @@ const hours = date.getHours();
 const minutes = date.getMinutes();
 
 const todaysDate = 
-    `${month}/${day}/${year}<br>
-    ${hours} Hourse ${minutes} Minutes`;
+    `${month}/${day}/${year}
+    ${hours}: ${minutes}`;
 
 let isDateContainerShowing = false;
 
 dateBtn.addEventListener('click', () => {
-    dateContainer.style.display = isDateContainerShowing ? 'none' : 'block';
+   isDateContainerShowing = !isDateContainerShowing;
+    if (isDateContainerShowing) {
     dateContainer.innerText = todaysDate;
-    dateBtn.innerText = isDateContainerShowing ? 'Show Date' : 'Hide Date';
+    dateBtn.innerText = 'Hide Date';
+    } else {
+        dateContainer.innerText = '';
+        dateBtn.innerText = 'Show Date';
+    }
 });
