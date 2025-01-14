@@ -44,10 +44,14 @@ hr {
 }
 
 #linkedin {
+  margin-top: -0.5em;
+  margin-bottom: 0.2em;
   color: var(--beige);
+  font-size: 1em;
 }
 
-.nav-link:visited {
+.nav-link:visited,
+#linkedin:visited {
   color: var(--dark-beige);
 }
 
@@ -99,6 +103,11 @@ h2,
   color: (--beige);
 }
 
+#summary {
+  margin-bottom: 1em;
+}
+
+
 h3 {
   color: var(--beige);
   align-items: center;
@@ -114,6 +123,7 @@ h3 {
   margin-top: 2em;
 }
 
+
 button {
   margin: 0.5em 0;
   align-items: center;
@@ -126,6 +136,8 @@ button {
   color: var(--beige);
   cursor: pointer;
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   fill: currentcolor;
   font-family: "Google Sans",Roboto,Arial,sans-serif;
   font-size: 14px;
@@ -146,7 +158,6 @@ button {
   touch-action: manipulation;
   width: auto;
   will-change: transform,opacity;
-  z-index: 0;
 }
 
 button:hover {

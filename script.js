@@ -12,13 +12,27 @@ lightBtn.addEventListener('click', () => {
         lightBtn.innerText = 'Light Mode';
         header.style.backgroundColor = 'black';
         header.style.color = 'white';
-        headers.forEach((h3) => (h3.style.color = 'white'));
-        background.style.backgroundColor = 'grey';
+        headers.forEach((h3) => {
+            h3.style.backgroundColor = 'grey';
+            h3.style.color = 'white';
+        });
+        background.style.backgroundColor = 'lightgray';
+        lightBtn.style.backgroundColor = 'black';
+        dateBtn.style.backgroundColor = 'black';
+        dateBtn.style.color = 'grey';
+        lightBtn.style.color = 'grey';
     } else {
         lightBtn.innerText = 'Dark Mode';
-        header.style.backgroundColor = 'white';
-        header.style.color = 'black';
-        headers.forEach((h3) => (h3.style.color = 'black'));
-        background.style.backgroundColor = 'white';
+        header.style.backgroundColor = '';
+        header.style.color = '';
+        headers.forEach((h3) => {
+            h3.style.backgroundColor = '';
+            h3.style.color = '';
+        });
+        background.style.backgroundColor = '';
+        lightBtn.style.backgroundColor = '';
+        dateBtn.style.backgroundColor = '';
+        dateBtn.style.color = '';
+        lightBtn.style.color = '';
     }
 });
