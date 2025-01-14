@@ -2,10 +2,9 @@ const lightBtn = document.getElementById('light-dark-mode');
 const header = document.querySelector('header');
 const headers = document.querySelectorAll('h3');
 const background = document.querySelector('main');
-const navBar = document.querySelector('nav-bar');
+const navBar = document.querySelector('nav');
 const navLinks = Array.from(document.getElementsByClassName('nav-link'));
 const cert = document.getElementById('cert');
-const html = document.querySelector('html');
 const dateBtn = document.getElementById('todays-date');
 let darkMode = false;
 
@@ -33,7 +32,6 @@ lightBtn.addEventListener('click', () => {
         dateBtn.style.backgroundColor = 'black';
         dateBtn.style.color = 'grey';
         lightBtn.style.color = 'grey';
-        html.style.backgroundColor = 'black';
     } else {
         return;
     }

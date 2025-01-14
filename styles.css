@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
-#nav-bar {
+nav {
   background-color: var(--blue);
   text-align: center;
   display: block;
