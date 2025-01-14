@@ -74,7 +74,7 @@ header {
 }
 
 #profile-picture {
-  width: 10em;
+  width: 15em;
   max-width: 100%;
   height: auto;
   border-radius: 50%;
@@ -87,8 +87,8 @@ header {
 
 #introduction {
   font-family: tahoma verdana serif;
-  padding-top: 7em;
-  margin-left: 16em;
+  padding-top: 10em;
+  margin-left: 24em;
   color: var(--beige);
   padding-bottom: 1em;
 }
@@ -123,6 +123,7 @@ h3 {
 
 button {
   margin: 0.5em auto;
+  margin-top: 1em;
   align-items: center;
   appearance: none;
   background-color: var(--blue);

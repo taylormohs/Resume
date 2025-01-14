@@ -1,7 +1,6 @@
 const lightBtn = document.getElementById('light-dark-mode');
 const header = document.querySelector('header');
 const headers = document.querySelectorAll('h3');
-const background = document.querySelector('main');
 const navBar = document.querySelector('nav');
 const navLinks = Array.from(document.getElementsByClassName('nav-link'));
 const linkedIn = document.getElementById('linkedIn');
@@ -36,7 +35,6 @@ lightBtn.addEventListener('click', () => {
             h3.style.backgroundColor = 'grey';
             h3.style.color = 'black';
         });
-        background.style.backgroundColor = 'lightgray';
         lightBtn.style.backgroundColor = 'black';
         dateBtn.style.backgroundColor = 'black';
         dateBtn.style.color = 'grey';
@@ -62,7 +60,6 @@ lightBtn.addEventListener('click', () => {
             h3.style.backgroundColor = '';
             h3.style.color = '';
         });
-        background.style.backgroundColor = '';
         lightBtn.style.backgroundColor = '';
         dateBtn.style.backgroundColor = '';
         dateBtn.style.color = '';
