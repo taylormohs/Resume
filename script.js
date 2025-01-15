@@ -98,7 +98,7 @@ wfHeader.addEventListener('click', () => {
     isWfSummaryShowing = !isWfSummaryShowing;
     if (isWfSummaryShowing) {
         wfSummary.innerHTML = `
-        <p id="wf-summary"><strong>As a bartender with 2 years of experience, I have honed a diverse skill set that can seamlessly transfer to a tech company environment. My roles and responsibilities have included:</strong>
+        <p><strong>As a bartender with 2 years of experience, I have honed a diverse skill set that can seamlessly transfer to a tech company environment. My roles and responsibilities have included:</strong>
               <ul>
                 <li>Customer Service Excellence: Developed strong interpersonal and communication skills that are crucial for client relations and teamwork in a tech setting.</li>
                 <li>Problem-Solving and Adaptability: Addressed and resolved customer concerns swiftly and effectively, showcasing my ability to remain calm under pressure and adapt to dynamic situations—a vital trait in the fast-paced tech industry.</li>
