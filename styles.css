@@ -157,6 +157,18 @@ h3 {
   color: var(--gold);
 }
 
+#resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bolder;
+
+}
+
 button {
   margin: 0.5em auto;
   margin-top: 1em;
