@@ -19,6 +19,7 @@ nav {
   font-size: 1em;
   width: 100%;
   left: 0;
+  top: 0;
   position: fixed;
   z-index: 0;
   padding-top: 0.3em;
@@ -74,7 +75,7 @@ header {
 }
 
 #profile-picture {
-  width: 25%;
+  width: 18em;
   max-width: 100%;
   height: auto;
   border-radius: 50%;
@@ -115,10 +116,7 @@ h3 {
   width: 100%;
   font-size: 1.2em;
   background-color: var(--blue);
-}
-
-#certifications {
-  margin-top: 1.5em;
+  margin-top: 5em;
 }
 
 #resume-btn {
@@ -127,6 +125,7 @@ h3 {
   appearance: none;
   background-color: var(--blue);
   box-sizing: border-box;
+  border-radius: 10px;
   color: var(--beige);
   cursor: pointer;
   display: inline-flex;

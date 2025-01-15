@@ -9,7 +9,7 @@ const h4 = document.getElementById('contact');
 const summary = document.getElementById('summary');
 const dateBtn = document.getElementById('todays-date');
 const dateContainer = document.getElementById('date-container');
-const resumeBtn = document.getElementById('resume');
+const resumeBtn = document.getElementById('resume-btn');
 const resumeContainer = document.getElementById('resume-container');
 
 let darkMode = false;
