@@ -70,7 +70,6 @@ header {
   color: var(--beige);
   width: 100%;
   position: relative;
-  z-index: 99;
   margin-bottom: 1em;
 }
 
@@ -83,6 +82,7 @@ header {
   margin-left: 3em;
   left: 0;
   display: block;
+  padding-top: 7em;
 }
 
 #introduction {
@@ -90,6 +90,7 @@ header {
   margin-left: 18em;
   color: var(--beige);
   padding-bottom: 1em;
+  padding-top: 7em;
 }
 
 h1 {
