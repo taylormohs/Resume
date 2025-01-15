@@ -108,7 +108,7 @@ h2,
 }
 
 .nav-bar-space {
-  height: 5em;
+  height: 6em;
 }
 
 h3 {
@@ -120,6 +120,7 @@ h3 {
   width: 100%;
   font-size: 1.2em;
   background-color: var(--blue);
+  margin-bottom: 6em;
 }
 
 #resume-btn {
@@ -239,6 +240,7 @@ p, li {
   color: #606060;
   font-size: 1em;
 }
+
 
 #work-header,
 #education-header,
