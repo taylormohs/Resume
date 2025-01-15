@@ -6,10 +6,12 @@ const navLinks = Array.from(document.getElementsByClassName('nav-link'));
 const linkedIn = document.getElementById('linkedIn');
 const cert = document.getElementById('cert');
 const h2 = document.getElementById('career');
-const h4 = document.getElementById('contact')
+const h4 = document.getElementById('contact');
 const summary = document.getElementById('summary');
 const dateBtn = document.getElementById('todays-date');
 const dateContainer = document.getElementById('date-container');
+const resumeBtn = document.getElementById('resume');
+const resumeContainer = document.getElementById('resume-container');
 
 let darkMode = false;
 
@@ -93,4 +95,18 @@ dateBtn.addEventListener('click', () => {
         dateContainer.innerText = '';
         dateBtn.innerText = 'Get Date & Time';
     }
+});
+
+let isResumeContainerShowing = false;
+
+resumeBtn.addEventListener('click', () => {
+    isResumeContainerShowing = !isResumeContainerShowing;
+    if (isResumeContainerShowing) { 
+        resumeBtn.innerText = 'Hide Resume';
+        resumeContainer.style.display = 'block';
+    } else {
+        resumeBtn.innerText = 'Resume';
+        resumeContainer.style.display = 'none';
+    }
+    
 });

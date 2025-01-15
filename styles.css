@@ -120,6 +120,42 @@ h3 {
   margin-top: 1.5em;
 }
 
+#resume-btn {
+  margin: 0.5em auto;
+  align-items: center;
+  appearance: none;
+  background-color: var(--blue);
+  border: 1px solid var(--gold);
+  box-sizing: border-box;
+  color: var(--beige);
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: currentcolor;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+#resume-btn:hover {
+  background-color: var(--beige);
+  color: var(--gold);
+}
 
 button {
   margin: 0.5em auto;
@@ -182,8 +218,7 @@ p, li {
 
 #work-header,
 #education-header,
-#reference-name,
-#cert {
+#reference-name {
   font-size: 1.2em;
   color: black;
 }
@@ -194,12 +229,13 @@ em {
 
 #cert {
    color: black;
+    font-size: 1.2em;
 }
 
 #cert:hover {
   cursor: grabbing;
   color: var(--gold);
-  font-size: 1.4rem;
+  font-size: 1.4em;
 }
 
 #cert:visited {
