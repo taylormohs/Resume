@@ -125,7 +125,6 @@ h3 {
   align-items: center;
   appearance: none;
   background-color: var(--blue);
-  border: 1px solid var(--gold);
   box-sizing: border-box;
   color: var(--beige);
   cursor: pointer;
@@ -150,11 +149,12 @@ h3 {
   touch-action: manipulation;
   will-change: transform,opacity;
   z-index: 0;
+  font-family: tahoma verdana serif;
 }
 
 #resume-btn:hover {
-  background-color: var(--beige);
-  color: var(--gold);
+  background-color: var(--gold);
+  color: var(--beige);
 }
 
 #resume {
@@ -207,7 +207,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--dark-beigebeige);
+  background-color: var(--dark-beige);
   color: var(--blue);
 }
 
