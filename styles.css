@@ -75,7 +75,7 @@ header {
 }
 
 #profile-picture {
-  width: 18em;
+  width: 16em;
   max-width: 100%;
   height: auto;
   border-radius: 50%;
@@ -84,6 +84,7 @@ header {
   left: 0;
   display: block;
   padding-top: 7em;
+  padding-bottom: 1em;
 }
 
 #introduction {

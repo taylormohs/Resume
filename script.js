@@ -9,6 +9,7 @@ const h4 = document.getElementById('contact');
 const summary = document.getElementById('summary');
 const dateBtn = document.getElementById('todays-date');
 const dateContainer = document.getElementById('date-container');
+const wfHeader = document.getElementById('wf-header');
 
 let darkMode = false;
 
@@ -87,5 +88,28 @@ dateBtn.addEventListener('click', () => {
     } else {
         dateContainer.innerText = '';
         dateBtn.innerText = 'Get Date & Time';
+    }
+});
+
+const wfSummary = document.getElementById('wf-summary');
+let isWfSummaryShowing = false;
+
+wfHeader.addEventListener('click', () => {
+    isWfSummaryShowing = !isWfSummaryShowing;
+    if (isWfSummaryShowing) {
+        wfSummary.innerHTML = `
+        <p id="wf-summary"><strong>As a bartender with 2 years of experience, I have honed a diverse skill set that can seamlessly transfer to a tech company environment. My roles and responsibilities have included:</strong>
+              <ul>
+                <li>Customer Service Excellence: Developed strong interpersonal and communication skills that are crucial for client relations and teamwork in a tech setting.</li>
+                <li>Problem-Solving and Adaptability: Addressed and resolved customer concerns swiftly and effectively, showcasing my ability to remain calm under pressure and adapt to dynamic situations—a vital trait in the fast-paced tech industry.</li>
+                <li>Multitasking and Time Management: Managed multiple tasks simultaneously, from preparing and serving drinks to handling cash transactions and maintaining inventory. This experience has equipped me with the ability to prioritize and manage time efficiently, essential for project management and meeting deadlines in a tech role.</li>
+                <li>Team Collaboration: Worked collaboratively with kitchen staff, waitstaff, and management to ensure smooth operations and exceptional service. My ability to work in a team-oriented environment is directly applicable to the collaborative nature of tech projects.</li>
+                <li>Attention to Detail: Maintained a clean and organized bar area, adhering to health and safety regulations. My meticulous attention to detail ensures accuracy and quality in all tasks, whether mixing a cocktail or coding a software application.</li>
+                <li>Upselling and Sales Skills: Enhanced revenue by effectively upselling beverages and promoting specials, demonstrating my persuasive communication skills and understanding of market dynamics—attributes beneficial for roles in tech sales or marketing.</li>
+              </ul>
+                </p>
+        `
+    } else {
+        wfSummary.innerText = '';
     }
 });
