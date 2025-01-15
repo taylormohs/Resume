@@ -126,6 +126,7 @@ h3 {
   background-color: var(--blue);
   box-sizing: border-box;
   border-radius: 10px;
+  border: none;
   color: var(--beige);
   cursor: pointer;
   display: inline-flex;

@@ -11,6 +11,7 @@ const dateBtn = document.getElementById('todays-date');
 const dateContainer = document.getElementById('date-container');
 const resumeBtn = document.getElementById('resume-btn');
 const resumeContainer = document.getElementById('resume-container');
+resumeContainer.setAttribute('hidden', 'true');
 
 let darkMode = false;
 
@@ -103,6 +104,6 @@ resumeBtn.addEventListener('click', () => {
         resumeContainer.removeAttribute('hidden');
     } else {
         resumeBtn.innerText = 'Resume';
-        resumeContainer.setAttribute('hidden', '');
+        resumeContainer.setAttribute('hidden', 'true');
     }
 });
