@@ -22,6 +22,7 @@ nav {
   position: fixed;
   z-index: 1;
   padding-top: 0.3em;
+  margin-bottom: 7em;
 }
 
 h4 {
@@ -81,13 +82,11 @@ header {
   margin-right: 3em;
   margin-left: 3em;
   left: 0;
-  padding-top: 7em;
   display: block;
 }
 
 #introduction {
   font-family: tahoma verdana serif;
-  padding-top: 7em;
   margin-left: 18em;
   color: var(--beige);
   padding-bottom: 1em;
