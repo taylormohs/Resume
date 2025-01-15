@@ -87,8 +87,8 @@ header {
 
 #introduction {
   font-family: tahoma verdana serif;
-  padding-top: 10em;
-  margin-left: 24em;
+  padding-top: 7em;
+  margin-left: 18em;
   color: var(--beige);
   padding-bottom: 1em;
 }
@@ -153,7 +153,7 @@ h3 {
 }
 
 #resume-btn:hover {
-  background-color: var(--gold);
+  background-color: #6AB8D5;
   color: var(--beige);
 }
 
@@ -210,7 +210,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--dark-beige);
+  background-color: var(--beige);
   color: var(--blue);
 }
 

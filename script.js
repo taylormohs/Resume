@@ -108,5 +108,4 @@ resumeBtn.addEventListener('click', () => {
         resumeBtn.innerText = 'Resume';
         resumeContainer.style.display = 'none';
     }
-    
 });
