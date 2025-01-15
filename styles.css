@@ -105,10 +105,17 @@ h2,
 #summary {
   font-size: 1em; 
   color: var(--beige);
+  margin-bottom: 1em;
 }
 
 .nav-bar-space {
   height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: lightslategray;
+  font-size: 1em;
 }
 
 h3 {
@@ -120,63 +127,7 @@ h3 {
   width: 100%;
   font-size: 1.2em;
   background-color: var(--blue);
-  margin-bottom: 6em;
-}
-
-#resume-btn {
-  margin: 0.5em auto;
-  align-items: center;
-  appearance: none;
-  background-color: var(--blue);
-  box-sizing: border-box;
-  border-radius: 10px;
-  border: none;
-  color: var(--beige);
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  fill: currentcolor;
-  font-weight: 500;
-  height: 48px;
-  justify-content: center;
-  letter-spacing: .25px;
-  line-height: normal;
-  max-width: 100%;
-  overflow: visible;
-  padding: 2px 24px;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  will-change: transform,opacity;
-  z-index: 0;
-  font-family: tahoma verdana serif;
-}
-
-#resume-btn:hover {
-  background-color: #6AB8D5;
-  color: var(--beige);
-}
-
-#resume {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5em auto;
-  padding: 0.5em;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bolder;
-  width: 60%;
-  height: auto;
-}
-
-.hidden {
-  display: none;
+  margin-bottom: 3em;
 }
 
 #light-dark-mode,

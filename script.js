@@ -9,9 +9,6 @@ const h4 = document.getElementById('contact');
 const summary = document.getElementById('summary');
 const dateBtn = document.getElementById('todays-date');
 const dateContainer = document.getElementById('date-container');
-const resumeBtn = document.getElementById('resume-btn');
-const resumeContainer = document.getElementById('resume-container');
-resumeContainer.setAttribute('hidden', 'true');
 
 let darkMode = false;
 
@@ -40,7 +37,6 @@ lightBtn.addEventListener('click', () => {
         dateBtn.style.color = 'grey';
         lightBtn.style.color = 'grey';
         dateContainer.style.color = 'black';
-        resumeBtn.style.backgroundColor = 'black';
     } else {
         lightBtn.innerText = 'Dark Mode';
         header.style.backgroundColor = '';
@@ -64,7 +60,6 @@ lightBtn.addEventListener('click', () => {
         dateBtn.style.color = '';
         lightBtn.style.color = '';
         dateContainer.style.color = '';
-        resumeBtn.style.backgroundColor = '';
     }
 });
 
@@ -92,18 +87,5 @@ dateBtn.addEventListener('click', () => {
     } else {
         dateContainer.innerText = '';
         dateBtn.innerText = 'Get Date & Time';
-    }
-});
-
-let isResumeContainerShowing = false;
-
-resumeBtn.addEventListener('click', () => {
-    isResumeContainerShowing = !isResumeContainerShowing;
-    if (isResumeContainerShowing) { 
-        resumeBtn.innerText = 'Hide Resume';
-        resumeContainer.removeAttribute('hidden');
-    } else {
-        resumeBtn.innerText = 'Resume';
-        resumeContainer.setAttribute('hidden', 'true');
     }
 });
