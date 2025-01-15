@@ -194,8 +194,31 @@ p, li {
 }
 
 
-#work-header,
-#education-header,
+#wf-header,
+#cj-header,
+#cascade-header,
+#access-header,
+#code-header,
+#bellingham-tech-header,
+#western-header {
+  color: black;
+  font-size: 1.2em;
+  background-color: var(--beige);
+  border: 0;
+  border-bottom: solid 1px black;
+}
+
+#wf-header:hover,
+#cj-header:hover,
+#cascade-header:hover,
+#access-header:hover,
+#code-header:hover,
+#bellingham-tech-header:hover,
+#western-header:hover {
+  font-size: 1.4em;
+  cursor: poiter;
+}
+
 #reference-name {
   font-size: 1.2em;
   color: black;
