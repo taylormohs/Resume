@@ -4,7 +4,6 @@ const headers = document.querySelectorAll('h3');
 const navBar = document.querySelector('nav');
 const navLinks = Array.from(document.getElementsByClassName('nav-link'));
 const linkedIn = document.getElementById('linkedin');
-const cert = document.getElementById('cert');
 const h2 = document.getElementById('career');
 const h4 = document.getElementById('contact');
 const summary = document.getElementById('summary');
@@ -31,8 +30,6 @@ lightBtn.addEventListener('click', () => {
         h4.style.color = 'grey';
         linkedIn.style.color = 'grey';
         summary.style.color = 'grey';
-        cert.style.color = 'black';
-        cert.style.backgroundColor = 'lightgray';
         headers.forEach((h3) => {
             h3.style.backgroundColor = 'grey';
             h3.style.color = 'black';
@@ -42,6 +39,7 @@ lightBtn.addEventListener('click', () => {
         dateBtn.style.color = 'grey';
         lightBtn.style.color = 'grey';
         dateContainer.style.color = 'black';
+        resumeBtn.style.backgroundColor = 'black';
     } else {
         lightBtn.innerText = 'Dark Mode';
         header.style.backgroundColor = '';
@@ -56,8 +54,6 @@ lightBtn.addEventListener('click', () => {
         h4.style.color = '';
         linkedIn.style.color = '';  
         summary.style.color = '';
-        cert.style.color = '';
-        cert.style.backgroundColor = '';
         headers.forEach((h3) => {
             h3.style.backgroundColor = '';
             h3.style.color = '';
@@ -67,6 +63,7 @@ lightBtn.addEventListener('click', () => {
         dateBtn.style.color = '';
         lightBtn.style.color = '';
         dateContainer.style.color = '';
+        resumeBtn.style.backgroundColor = '';
     }
 });
 
@@ -103,9 +100,9 @@ resumeBtn.addEventListener('click', () => {
     isResumeContainerShowing = !isResumeContainerShowing;
     if (isResumeContainerShowing) { 
         resumeBtn.innerText = 'Hide Resume';
-        resumeContainer.style.display = 'block';
+        resumeContainer.removeAttribute('hidden');
     } else {
         resumeBtn.innerText = 'Resume';
-        resumeContainer.style.display = 'none';
+        resumeContainer.setAttribute('hidden', '');
     }
 });

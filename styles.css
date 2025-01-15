@@ -20,9 +20,8 @@ nav {
   width: 100%;
   left: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   padding-top: 0.3em;
-  margin-bottom: 7em;
 }
 
 h4 {
@@ -35,8 +34,9 @@ hr {
   color: var(--beige);
   border: 1px solid var(--beige);
   padding: 0.1em;
-  background-color:  var(--beige)
+  background-color:  var(--beige);
 }
+
 .nav-link { 
   background-color: var(--blue);
   text-align: justify;
@@ -74,7 +74,7 @@ header {
 }
 
 #profile-picture {
-  width: 15em;
+  width: 25%;
   max-width: 100%;
   height: auto;
   border-radius: 50%;
@@ -87,7 +87,8 @@ header {
 
 #introduction {
   font-family: tahoma verdana serif;
-  margin-left: 18em;
+  right: 0;
+  width: 75%;
   color: var(--beige);
   padding-bottom: 1em;
   padding-top: 7em;
@@ -168,10 +169,14 @@ h3 {
   font-weight: bolder;
   width: 60%;
   height: auto;
-
 }
 
-button {
+.hidden {
+  display: none;
+}
+
+#light-dark-mode,
+#todays-date {
   margin: 0.5em auto;
   margin-top: 1em;
   margin-left: 1em;
@@ -209,7 +214,8 @@ button {
   z-index: 0;
 }
 
-button:hover {
+#light-dark-mode:hover,
+#todays-date:hover {
   background-color: var(--beige);
   color: var(--blue);
 }
