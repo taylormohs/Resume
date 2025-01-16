@@ -92,14 +92,16 @@ header {
     width: 12em;
     margin-right: 2em;
     margin-left: 2em;
+    margin-top: 9em;
   }
 }
 
 @media (max-width: 800px) {
   #profile-picture,
   #introduction {
-    width: 10em;
-    border-radius: 20%;
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
     margin-right: 1.8em;
     margin-left: 1.8em;
   }
@@ -110,6 +112,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
 }
 }
 
@@ -209,6 +212,7 @@ h3 {
 #todays-date:hover {
   background-color: var(--beige);
   color: var(--blue);
+  cursor: pointer;
 }
 
 #date-container {
@@ -270,7 +274,7 @@ em {
 }
 
 #cert:hover {
-  cursor: grabbing;
+  cursor: pointer;
   color: var(--gold);
   font-size: 1.4em;
 }
