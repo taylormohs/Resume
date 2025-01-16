@@ -92,22 +92,25 @@ header {
     width: 12em;
     margin-right: 2em;
     margin-left: 2em;
+    margin-top: 40%;
   }
 }
 
 @media (max-width: 800px) {
   #profile-picture {
     width: 10em;
-    margin-right: 1em;
-    margin-left: 1em;
+    margin-right: 1.8em;
+    margin-left: 1.8em;
+    margin-top: 40%;
   }
 }
 
 @media (max-width: 600px) {
   #profile-picture {
     width: 8em;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 40%;
   }
 }
 
@@ -227,9 +230,10 @@ p, li {
 #western-header {
   color: black;
   font-size: 1.2em;
-  background-color: var(--dark-beige);
+  background-color: var(--beige);
   border: 0;
   border-bottom: solid 3px black;
+  border-radius: 6px;
 }
 
 #wf-header:hover,
