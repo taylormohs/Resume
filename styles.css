@@ -87,6 +87,30 @@ header {
   padding-bottom: 1em;
 }
 
+@media (max-width: 1200px) {
+  #profile-picture {
+    width: 12em;
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 800px) {
+  #profile-picture {
+    width: 10em;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  #profile-picture {
+    width: 8em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+}
+
 #introduction {
   font-family: tahoma verdana serif;
   right: 0;
@@ -203,9 +227,9 @@ p, li {
 #western-header {
   color: black;
   font-size: 1.2em;
-  background-color: var(--beige);
+  background-color: var(--dark-beige);
   border: 0;
-  border-bottom: solid 1px black;
+  border-bottom: solid 3px black;
 }
 
 #wf-header:hover,
@@ -216,7 +240,7 @@ p, li {
 #bellingham-tech-header:hover,
 #western-header:hover {
   font-size: 1.4em;
-  cursor: poiter;
+  cursor: pointer;
 }
 
 #reference-name {
