@@ -23,6 +23,7 @@ nav {
   position: fixed;
   z-index: 99;
   padding-top: 0.3em;
+  padding-bottom: 0.1em;
 }
 
 h4 {
@@ -278,19 +279,22 @@ em {
   letter-spacing: 0.1em;
 }
 
-#cert {
+#cert, .project-tile {
    color: black;
     font-size: 1.2em;
-    cursor: pointer;
+    cursor: grabbing;
 }
 
-#cert:hover {
+#cert:hover,
+.project-tile:hover {
   cursor: pointer;
   color: var(--gold);
   font-size: 1.4em;
+  color: black;
 }
 
-#cert:visited {
+#cert:visited,
+.project-tile:visited {
   font-weight: bolder;
   color: black;
 }
