@@ -1,9 +1,12 @@
 const lightBtn = document.getElementById('light-dark-mode');
+const body = document.querySelector('body');
 const header = document.querySelector('header');
-const headers = document.querySelectorAll('h3');
+const headers = document.querySelectorAll('h3'); 
 const navBar = document.querySelector('nav');
 const navLinks = Array.from(document.getElementsByClassName('nav-link'));
+const hr = document.getElementById('hr');
 const linkedIn = document.getElementById('linkedin');
+const h1 = document.getElementById('name');
 const h2 = document.getElementById('career');
 const h4 = document.getElementById('contact');
 const summary = document.getElementById('summary');
@@ -16,27 +19,31 @@ lightBtn.addEventListener('click', () => {
     darkMode = !darkMode;
     if (darkMode) {
         lightBtn.innerText = 'Light Mode';
-        header.style.backgroundColor = 'black';
-        header.style.color = 'grey';
-        navBar.style.backgroundColor = 'black';
-        navBar.style.color = 'grey';
+        header.style.backgroundColor = '#192231';
+        header.style.color = '#525980';
+        navBar.style.backgroundColor = '#192231';
+        navBar.style.color = '#525980';
         navLinks.forEach((link) => {
-            link.style.color = 'grey';
-            link.style.backgroundColor = 'black';
+            link.style.color = '#525980';
+            link.style.backgroundColor = '#192231';
         });
-        h2.style.color = 'grey';
-        h4.style.color = 'grey';
-        linkedIn.style.color = 'grey';
-        summary.style.color = 'grey';
+        hr.style.backgroundColor = '#626a98';
+        hr.style.border = '1px solid #626a98';
+        h1.style.color = '#626a98';
+        h2.style.color = '#626a98';
+        h4.style.color = '#626a98';
+        linkedIn.style.color = '#626a98';
+        summary.style.color = '#626a98';
         headers.forEach((h3) => {
-            h3.style.backgroundColor = 'grey';
-            h3.style.color = 'black';
+            h3.style.backgroundColor = '#626a98';
+            h3.style.color = '#192231';
         });
-        lightBtn.style.backgroundColor = 'black';
-        dateBtn.style.backgroundColor = 'black';
-        dateBtn.style.color = 'grey';
-        lightBtn.style.color = 'grey';
-        dateContainer.style.color = 'black';
+        lightBtn.style.backgroundColor = '#626a98';
+        dateBtn.style.backgroundColor = '#626a98';
+        dateBtn.style.color = '#192231';
+        lightBtn.style.color = '#192231';
+        dateContainer.style.color = '#192231';
+
     } else {
         lightBtn.innerText = 'Dark Mode';
         header.style.backgroundColor = '';
@@ -47,6 +54,9 @@ lightBtn.addEventListener('click', () => {
             link.style.color = '';
             link.style.backgroundColor = '';
         });
+        hr.style.backgroundColor = '';
+        hr.style.border = '';
+        h1.style.color = '';
         h2.style.color = '';
         h4.style.color = '';
         linkedIn.style.color = '';  

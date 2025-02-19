@@ -1,15 +1,14 @@
 :root {
-  --blue: #429ebf;
-  --pink: #bd8592;
+  --blue: #8f5b34;
+  --pink: #8d9b6a;
   --beige: #f6f4ee;
-  --dark-beige: #dcd0b1;
-  --gold: #cab98b;
+  --dark-beige: #dbccbc;
+  --gold: #dab692;
 }
 
 * {
   scroll-behavior: smooth;
-  font-family: courier new;
-  cursor: default;
+  font-family: "Courier New", Courier, monospace;
 }
 
 nav {
@@ -29,20 +28,20 @@ nav {
 h4 {
   font-size: 1em;
   padding-bottom: 0.3em;
-  color: var(--beige);
+  color: var(--dark-beige);
 }
 
-hr {
+#hr {
   color: var(--beige);
-  border: 1px solid var(--beige);
+  border: 1px solid var(--dark-beige);
   padding: 0.1em;
-  background-color:  var(--beige);
+  background-color:  var(--dark-beige);
 }
 
 .nav-link { 
   background-color: var(--blue);
   text-align: justify;
-  color: var(--beige);
+  color: var(--dark-beige);
 }
 
 #linkedin {
@@ -62,7 +61,7 @@ hr {
  {
   color: var(--gold);
   font-size: 1.2em;
-  cursor: grabbing;
+  cursor: pointer;
 }
 
 
@@ -93,9 +92,10 @@ header {
     width: 12em;
     margin-right: 2em;
     margin-left: 2em;
-    margin-top: 5em;
+    margin-top: 2em;
   }
 }
+
 
 @media (max-width: 800px) {
   #profile-picture,
@@ -105,16 +105,15 @@ header {
     border-radius: 10px;
     margin-right: 1.8em;
     margin-left: 1.8em;
-    
-  }
-
-  #profile-picture,
-  #introduction {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
+  }
+
+  #profile-picture {
+    margin-top: 4em;
 }
 }
 
@@ -136,7 +135,7 @@ header {
 }
 
 #introduction {
-  font-family: tahoma verdana serif;
+  font-family: Tahoma, Verdana, serif;
   right: 0;
   width: 75%;
   color: var(--beige);
@@ -249,14 +248,15 @@ p, li {
 #access-header,
 #code-header,
 #bellingham-tech-header,
-#western-header {
+#western-header,
+#cert,
+.project {
   color: black;
   font-size: 1.2em;
   background-color: var(--beige);
   border: 0;
   border-bottom: solid 3px black;
   border-radius: 6px;
-  cursor: pointer;
 }
 
 #wf-header:hover,
@@ -265,7 +265,9 @@ p, li {
 #access-header:hover,
 #code-header:hover,
 #bellingham-tech-header:hover,
-#western-header:hover {
+#western-header:hover,
+#cert:hover,
+.project:hover {
   font-size: 1.4em;
   cursor: pointer;
 }
@@ -275,22 +277,21 @@ p, li {
   color: black;
 }
 
+
 em {
   letter-spacing: 0.1em;
 }
 
 #cert, .project-tile {
-   color: black;
-    font-size: 1.2em;
-    cursor: grabbing;
+    text-decoration: none;
 }
 
 #cert:hover,
 .project-tile:hover {
-  cursor: pointer;
   color: var(--gold);
   font-size: 1.4em;
   color: black;
+  cursor: pointer;
 }
 
 #cert:visited,
